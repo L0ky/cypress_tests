@@ -13,18 +13,14 @@ When('I click on the login button', () => {
 })
 
 Then('I should see a success login message', () => {
-    Then('I should see a success message', () => {
-        cy.on('window:alert',(txt)=>{
-            expect(txt).to.contains('validation succeeded');
-        })
+    cy.on('window:alert',(txt)=>{
+        expect(txt).to.contains('validation succeeded');
     })
 })
 
 // // Gestion des messages d'erreurs pour un email invalide
 Then('I should see a error login message', () => {
-    Then('I should see a success message', () => {
-        cy.on('window:alert',(txt)=>{
-            expect(txt).to.contains('validation failed');
-        })
+    cy.on('window:alert',(txt)=>{
+        expect(txt).to.contains('validation failed');
     })
 })
