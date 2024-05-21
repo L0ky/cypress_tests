@@ -1,0 +1,23 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Loky",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cypress": "^13.9.0",
+    "install": "^0.13.0",
+    "ts-loader": "^9.5.1"
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.5",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinition": "cypress/support/step_definitions/**/*.js"
+  }
+}
